@@ -17,13 +17,5 @@ namespace SimpleAPI.Test
             IEnumerable<WeatherForecast> result = weatherForecastController.Get();
             Assert.Equal(expectedValue, result.Count());
         }
-
-        [Fact]
-        public void WeatherForecastController_GET_Returns10Results()
-        {
-            int expectedValue = 10;
-            IEnumerable<WeatherForecast> result = weatherForecastController.Get();
-            Assert.Equal(expectedValue, result.Count());
-        }
     }
 }
